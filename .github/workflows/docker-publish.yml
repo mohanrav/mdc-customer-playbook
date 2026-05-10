@@ -28,4 +28,3 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.ACR_ENDPOINT }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
-          labels: ${{ steps.meta.outputs.labels }}
